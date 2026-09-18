@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light only" />
+    <title>Grades & Feedback — Assignment #1</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <span class="brand">Arailym Amangeldi</span>
+        <ul>
+          <li><a href="index.html">Task 1 · Home</a></li>
+          <li><a href="layout.html">Task 2 · Layout</a></li>
+          <li><a href="tribute.html">Task 3 · Tribute</a></li>
+          <li>
+            <a href="table-form.html" class="active">Task 4 · Grades & Form</a>
+          </li>
+          <li><a href="../Pet adaption/index.html">Task 5 · Pet Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="t4-wrap">
+      <div
+        class="skill-card-head"
+        id="grades-heading"
+        style="margin-bottom: 20px"
+      >
+        <span>Student Grades</span>
+      </div>
+
+      <table class="grades">
+        <caption>
+          Sample grade sheet — one row is highlighted, and the first row uses a
+          merged cell.
+        </caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Arailym Amangeldi</td>
+            <td>Web Development</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>Algorithms</td>
+            <td>88</td>
+          </tr>
+          <tr class="highlight-row">
+            <td>Daniyar Serik</td>
+            <td>Web Development</td>
+            <td>99</td>
+          </tr>
+          <tr>
+            <td>Aidana Bekova</td>
+            <td>Databases</td>
+            <td>91</td>
+          </tr>
+          <tr>
+            <td colspan="2">Class average</td>
+            <td>93.25</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form class="t4-form" action="#" method="post">
+        <div
+          class="skill-card-head"
+          style="margin: -28px -30px 20px; border-radius: 0"
+        >
+          <span>Feedback Form</span>
+        </div>
+
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your full name"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          required
+        />
+
+        <label for="role">Role</label>
+        <select id="role" name="role">
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label>Did the course meet your expectations?</label>
+        <div class="radio-row">
+          <label
+            ><input type="radio" name="expectations" value="yes" checked />
+            Yes</label
+          >
+          <label
+            ><input type="radio" name="expectations" value="no" /> No</label
+          >
+        </div>
+
+        <label for="comments">Comments</label>
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="Write your feedback here..."
+        ></textarea>
+
+        <button type="submit" id="submit-btn">Send Feedback</button>
+      </form>
+    </div>
+
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Arailym Amangeldi · Assignment #1, HTML &amp; CSS Basics
+      </p>
+    </footer>
+  </body>
+</html>

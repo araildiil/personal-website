@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light only" />
+    <title>Layout — Assignment #1</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <span class="brand">Arailym Amangeldi</span>
+        <ul>
+          <li><a href="index.html">Task 1 · Home</a></li>
+          <li><a href="layout.html" class="active">Task 2 · Layout</a></li>
+          <li><a href="tribute.html">Task 3 · Tribute</a></li>
+          <li><a href="table-form.html">Task 4 · Grades & Form</a></li>
+          <li><a href="../Pet adaption/index.html">Task 5 · Pet Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="t2-header">
+      <h1>Study Planner</h1>
+    </header>
+
+    <div class="t2-wrapper">
+      <div class="t2-sidebar">
+        <div
+          class="skill-card-head"
+          style="margin: -18px -18px 14px; border-radius: 0"
+        >
+          <span>Sections</span>
+        </div>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#weekly-goals">Weekly goals</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#notes">Notes</a></li>
+        </ul>
+      </div>
+
+      <div class="t2-content">
+        <h2 id="overview">Overview</h2>
+        <p>
+          This page is built only with <code>&lt;div&gt;</code> elements and CSS
+          float / positioning — no Flexbox or Grid. The sidebar on the left is
+          floated left, and this content block is floated right, giving a simple
+          two-column layout below the header and navigation bar.
+        </p>
+
+        <h2 id="weekly-goals">Weekly goals</h2>
+        <p>
+          Finish the HTML &amp; CSS assignment, review this week's lecture
+          notes, and keep the study planner updated with any new deadlines.
+        </p>
+
+        <h2 id="resources">Resources</h2>
+        <p>
+          Course textbook chapters, lecture slides, and a couple of MDN pages on
+          floats and positioning that helped while building this layout.
+        </p>
+
+        <h2 id="notes">Notes</h2>
+        <p>
+          Floats are an older layout technique —
+          <code>overflow: hidden</code> on the wrapper is used here to contain
+          them (a "clearfix"), since floated elements are taken out of normal
+          document flow.
+        </p>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Arailym Amangeldi · Assignment #1, HTML &amp; CSS Basics
+      </p>
+    </footer>
+  </body>
+</html>
